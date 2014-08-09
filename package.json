@@ -1,7 +1,7 @@
 {
   "name": "sasazka",
   "version": "0.1.0",
-  "description": "An experimental implementetion of HTTP/2 for Node.js",
+  "description": "Yet another HTTP/2 implementation for Node.js",
   "main": "lib/index",
   "scripts": {
     "test": "istanbul cover _mocha -- -R spec",
@@ -25,7 +25,8 @@
     "eslint": "^0.7.4"
   },
   "dependencies": {
-    "ansicolors": "^0.3.2",
-    "microtime": "^0.5.1"
+  },
+  "engines": {
+    "node" : ">=0.10.1"
   }
 }
