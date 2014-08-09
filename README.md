@@ -5,7 +5,7 @@ This module supports [draft-ietf-httpbis-http2-14](http://tools.ietf.org/html/dr
 
 ## Usage
 
-````
+```javascript
 var fs = require('fs');
 var http2 = require('sasazka');
 
@@ -25,11 +25,12 @@ var server = http2.createServer(options, function (req, res) {
 });
 
 server.listen(443);
-````
+```
 
 ## Notes
 
 * ALPN is not yet supported in Node.js. Sasazka uses NPN for negotiation.
+* This is an experimental module. so this module is not registered on the npm registry yet.
 * To enable debug logger, you must set environment valiable `DEBUG=serializer,deserializer`.
 
 ## TODO  
@@ -42,7 +43,7 @@ server.listen(443);
 * Better flow control
 * Upload to the npm registry
 
-## LICENSE
+## License
 
 The MIT License
 
