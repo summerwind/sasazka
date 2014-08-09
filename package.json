@@ -1,0 +1,31 @@
+{
+  "name": "sasazka",
+  "version": "0.1.0",
+  "description": "An experimental implementetion of HTTP/2 for Node.js",
+  "main": "lib/index",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec",
+    "lint": "eslint -c .eslintrc lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/summerwind/sasazka.git"
+  },
+  "homepage": "https://github.com/summerwind/sasazka",
+  "keywords": [
+    "http2", "hpack"
+  ],
+  "author": "Moto Ishizawa <summerwind.jp@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "^0.2.0",
+    "mocha": "^1.14.0",
+    "istanbul": "^0.2.10",
+    "waitress": "^0.1.5",
+    "eslint": "^0.7.4"
+  },
+  "dependencies": {
+    "ansicolors": "^0.3.2",
+    "microtime": "^0.5.1"
+  }
+}
